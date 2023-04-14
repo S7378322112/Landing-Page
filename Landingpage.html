@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Login Form</title>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<style>
+     *{
+          margin:0;
+          padding:0;
+		  box-sizing:border-box;
+      }
+	 body{
+	      scroll-behavior:smooth;
+		  font-family:cursive;
+		 }
+	    a{
+		  text-decoration:none;
+		 }
+		li{
+		   list-style:none;
+		  }
+		.navbar{top:0%;
+                width: 100%;
+		        height:100%;
+				position: sticky;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+                padding:0 100px;
+                background-color: rgb(17,58,102);
+            }
+		.nav-links a {
+                      letter-spacing: 5px;
+		              color:whitesmoke;
+					 }
+			.logo {
+			        font-size: 30px;
+                    color:whitesmoke;
+                    letter-spacing: 5px;
+				}
+
+			.menu {
+			        display: flex;
+					gap: lem;
+                    padding:25px 45pX;
+	                font-size: 25px;
+				}
+			.menu li:hover {
+			                background-color:rgb(95, 153, 248);
+							border-radius: 5px;
+							border-top:5px solid rgb(158, 213, 247);
+							transition: 0.25 ease-in-out;
+						}
+			.menu li{
+			         padding: 5px 14px;
+					}
+			header{
+                width:100%;
+                height:100vh;
+                background: url(" https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg");
+				background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            main{
+                 width: 100%;
+				 height: 85vh;
+				 display: flex;
+				 justify-content: center;
+				 align-items: center;
+				 text-align: center;
+				 color: rgb(251, 247, 247);
+            }
+			section{
+               color:whitesmoke;
+			}
+			section h3{
+				font-size: 35px;
+				font-weight: 200;
+				letter-spacing: 3px;
+				text-shadow: 1px 1px 2px black;
+			}
+			section h1{
+                margin: 30px 0 20px 0;
+				font-size: 55px;
+				font-weight: 700;
+				text-shadow: 2px 1px 5px black;
+			    text-transform: uppercase;
+			}
+			section p{
+				font-size: 25px;
+				word-spacing: 2px;
+				margin-bottom: 25px;
+				text-shadow: 1px 1px 1px black;
+			}
+			section a{
+				padding: 12px 30px;
+				border-radius: 4px;
+				outline: none;
+				text-transform: uppercase;
+				font-size: 13px;
+				font-weight: 500;
+				text-decoration: none;
+				letter-spacing: 1px;
+				transition: all .5s ease;		
+					}
+			section .btnone{
+				background: #fff;
+				color: #000;
+				}
+			.btnone:hover{
+				background: #00b894;
+				color: white;
+			}
+			section .btntwo{
+				background: #00b894;
+				color: white;
+			}
+			.btntwo:hover{
+				background: #fff;
+				color:#000
+			}
+			.change_content:after{
+				content: '';
+				animation: changetext 10s infinite linear;
+				color:#00b894;
+			}
+			@keyframes changetext{
+				0%{content:"Darjeeling";}
+				20%{content:"Agra";}
+				35%{content:"Jaipur";}
+				60%{content:"Kerala";}
+				80%{content:"Delhi";}
+				100%{content:"Mumbai";}
+			}
+
+</style>
+</head>
+<body>
+    <nav class="navbar">
+	    <div class="logo"><h1 class="animated infinite heartBeat ">MERA BHARAT</h1></div>
+		<ul class="nav-links">
+		<div class="menu">
+		    <li><a href="#HOME">HOME</a></li>
+            <li><a href="#GALLERY">GALLERY</a></li>
+		    <li><a href="#ABOUT">ABOUT</a></li>	
+		    <li><a href="#CONTACT">CONTACT</a></li>
+		</div>
+		</ul>
+		</nav>
+<header>		
+         <main>
+          <section>
+			<h3>Welcome To India</h3>
+			<h1>DO COME & VISIT <span class="change_content"></span></h1>
+			<p>"India once is not enough"</p>
+			<a href="#" class="btnone">Learn more</a>
+			<a href="#" class="btntwo">Signup here</a>
+		  </section>
+	     </main>
+</header>
+</body>
+</html>
